@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Dating Profile</title>
+        <meta name="author" content="Sraddha Kar">
+        <link href="main.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body>
+        <section>
+        <form method="get" action="thankyou.html">
+            <h1>Please Enter Your Details For Our Dating Website!</h1>
+
+            <fieldset>
+                <legend>Your Face</legend>
+                <label for="avatar">Your image : </label>
+                    <input type="file" id="avatar" name="avatar" ><br>
+                <label for="avatar">Image preview :</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your General Details</legend>
+                <label for="name">Name : </label>
+                <input type="text" placeholder="Your full name" required>
+                <br>
+                <label for="gender" >Gender : </label>
+                <input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="female">Female
+                <br>
+                <label for="age">Age :  </label>
+                <input type="number" required>
+                <br>
+                <label for="dob">Date of birth :</label>
+                <input type="date">
+                <br>
+                <label for="fcolor">Favourite colour : </label>
+                <input type="color">
+                <br>
+                <label for="country">Which country : </label>
+                <select name="country">
+                    <option value="null">-select-</option>
+                    <option value="india"> India</option>
+                    <option value="australia"> Australia</option>
+                    <option value="england"> England</option>
+                    <option value="america"> America</option>
+                    <option value="africa"> Africa</option>
+                </select>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Indicators</legend>
+                <label for="height">Height :</label>Short<input type="range" min="0" max="100">Tall<br>
+                <label for="salary">Salary :</label>Poor<input type="range" min="0" max="100">Rich<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <label for="email">Email : </label><input type="email" required><br>
+                <label for="mobile">Mobile : </label><input type="tel"><br>
+                <label for="address">Address : </label><textarea></textarea><br>
+                <label for="contact" >Method to contact you : </label>
+                    <input type="checkbox" name="contact" value="email">Email
+                    <input type="checkbox" name="contact" value="whatsapp">WhatsApp
+                    <input type="checkbox" name="contact" value="lappchat">La-app chat
+                <br>
+            </fieldset>
+
+            <input type="submit" value="SUBMIT">
+
+        </form>
+        </section>
+    </body>
+</html>
